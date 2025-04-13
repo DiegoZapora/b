@@ -13,20 +13,17 @@ body {
 main#container {
     display: flex;
     flex-flow: column nowrap;
-    position: relative;
+    align-items: center;
 }
 
 section#conteudo {
-    position: absolute;
+    margin-top: 150px;
     padding-top: 50px;
     padding-left: 10px;
     width: 400px;
     height: 170px;
     border-radius: 10px;
     background-color: white;
-    right: 100px;
-    top: 400px;
-    transform: translate(-50%, -50%);
 }
 
 section input {
