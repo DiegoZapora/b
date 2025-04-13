@@ -5,53 +5,49 @@
     padding: 0px;
 }
 
-body, html {
+body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: black;
+}
+
+main#container {
     display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: center;
-    margin-top: 100px;
+    flex-flow: column nowrap;
+    position: relative;
 }
 
-body h1 {
-    text-align: center;
+section#conteudo {
+    position: absolute;
     padding-top: 50px;
-    border-radius: 10px 10px 0px 0px;
-    background-color: white;
-    width: 400px;
-    height: 60px;
-}
-
-section {
+    padding-left: 10px;
     width: 400px;
     height: 170px;
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 10px;
     background-color: white;
+    right: 100px;
+    top: 400px;
+    transform: translate(-50%, -50%);
 }
 
-section div {
-    padding-left: 13px;
+section input {
+    padding-left: 5px;
 }
 
-section div > input#n1 {
+section input#n1 {
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.356);
-    height: 50px;
     height: 17px;
     font-weight: bold;
 }
 
-section div > input#n2 {
+section input#n2 {
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.336);
-    height: 50px;
     height: 17px;
     font-weight: bold;
 }
 
-section div > input#andre {
+section input#andre {
     cursor: pointer;
     width: 80px;
     height: 50px;
@@ -63,11 +59,11 @@ section div > input#andre {
     font-size: 1.0em;
 }
 
-section div p#res {
+section p#res {
     font-weight: bolder;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
-div > input#andre:hover {
+input#andre:hover {
     background-color: green;
 }
